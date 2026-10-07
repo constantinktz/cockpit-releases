@@ -15,3 +15,12 @@ Cockpit sucht selbst nach neuen Versionen und zeigt dann oben rechts „Update x
 ## Fehler melden
 
 Einstellungen › Allgemein › „Diagnose kopieren“ und den Text mitschicken. Tokens und der Benutzerordner sind darin schon entfernt.
+
+### Logs
+
+Cockpit schreibt Warnungen, Fehler und Abstürze in eine Logdatei, höchstens 2 MB:
+
+- **Windows:** `%LOCALAPPDATA%\de.constantin.cockpit\logs\cockpit.log`, also etwa `C:\Users\<name>\AppData\Local\de.constantin.cockpit\logs\cockpit.log`. Am schnellsten: Win+R, `%LOCALAPPDATA%\de.constantin.cockpit\logs` eingeben, Enter.
+- **macOS:** `~/Library/Logs/de.constantin.cockpit/cockpit.log`
+
+In Cockpit öffnet Einstellungen › Allgemein › „Logs öffnen“ den Ordner direkt, ebenso „Logs öffnen“ in der Befehlspalette (Strg+K). Die Datei kann Pfade und Projektnamen enthalten, vor dem Weitergeben kurz drüberschauen. Die letzten 200 Zeilen stecken auch schon in „Diagnose kopieren“.
